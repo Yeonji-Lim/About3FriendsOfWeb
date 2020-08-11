@@ -1,4 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<title>WEB1 - html</title>
 <meta charset="utf-8">
-<h1>Hello Html!</h1>
-<h2>heading은 제목이라는 것</h2>
-<strong> Tag <strong> : 해당 부분을 어떻게 할 지 <u>설명</u>해주는 것
+</head>
+<body>
+<h1><a href = "index.html">Hello Web!</a></h1>
+<ol>
+    <li><a href = "myfirst.html">HTML</a></li>
+    <li><a href = "myfirstcss.html">CSS</a></li>
+    <li><a href = "myfirstjavascript.html">Javascript</a></li>
+</ol>
+<h2>HTML</h2>
+<p>HyperText Markup Language</p>
+<h2>heading</h2>
+<br>
+제목임을 의미
+<h2>Tag</h2>
+<br><strong> Tag </strong> : 해당 부분을 어떻게 할 지 <u>설명</u>해주는 것
+<h2>Tag의 종류 </h2>
+<p>줄바꿈에 쓰이는 그는 br과 p가 있다.</p>
+<br>br : 줄바꿈 자체를 의미
+<p>p : 단락을 의미하는 단락 태그</p>
+<p>br보다 p가 더 좋다 -> 웹 페이지를 정보로서 더 가치있게 해준다 </p>
+<br><br>
+BUT! p의 단점 : 단락 사이의 간격이 고정되어 있어서 시각적 자유도가 떨어짐
+<p style="margin-top:45px;">하지만 CSS를 활용하면 단락 사이의 간격을 조절 가능하다! </p>
+<p>최종 : p가 br보다 좋다 -> p 태그를 통해서 단락의 경계를 분명히 하면서 CSS를 통해서 p 태그의 디자인을 자유롭게 변경할 수 있기 때문에</p>
+<h2>HTML이 중요한 이유 : 비즈니스적 측면과 휴머니즘적 측면 </h2>
+<p>1. 일반인과 지식인이 10년 동안 1억개의 웹페이지를 만들었다면 어떤 차이가 생길까를 봅시다.</p>
+<p>검색엔진은 전세계의 웹페이지를 분석합니다. 그리고 사용자가 검색을 했을 때 검색결과를 보여줍니다. </p>
+<p>만약 사용자가 검색엔진에게 coding이라는 정보를 검색했다면 검색엔진은 h3 태그 로 감싸진 페이지와 strong태그 + span태그 style="font-size:22px"로 감싸진 페이지 중에 어떤 페이지를 먼저 보여줄까요?</p>
+<p>h3 태그로 감싸진 페이지를 더 먼저 보여줄 것입니다.</p>
+<p>h3 태그는 제목을 의미 하지만, strong 태그 + span 태그 + style="font-size:22px"는 시각적인 장식이기 때문입니다.</p>
+<p style="margin-top:45px;">오늘날 정보의 세계에서 검색엔진의 검색결과에서 노출되느냐는 실제로 존재하느냐,존재하지 않느냐의 문제라고 할 수 있습니다.</p>
+<p>100페이지 밖에 있는 검색결과를 누가 보겠어요.</p>
+<p>의미에 맞는 태그로 웹페이지를 만든 지식인과 그렇지 않은 일반인은 10년 뒤에 인생이 달라져 있을 것입니다.
+정보사회에서 HTML을 의미에 맞게 잘 사용하는 것은 비즈니스적인 측면에서 매우 중요합니다.</p>
+<p style="margin-top:45px;">2. 웹의 핵심적인 철학은 접근성입니다.</p>
+<p>웹은 모든 운영체제에서 동작하고, 웹페이지의 소스코드는 누구나 볼 수 있고, 웹은 저작권이 없는 순수한 공공재입니다.</p>
+<p>웹의 이런 특징들이 웹을 다른 기술들과 구별되는 특별한 것으로 만든다고 생각합니다.</p>
+
+<p style="margin-top:45px;">img : 이미지 삽입 태그 </p>
+<p>어떤 이미지를 불러올 지에 대한 정보가 필요하다 </p>
+
+<h3>Attribute</h3>
+<p>속성이라는 뜻, Tag의 심화문법, 태그라는 이름만으로는 정보가 부족할 때 사용한다.  </p>
+<img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png" width="50%">
+<p>위의 이미지는 img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png"를 추가한 것임</p>
+<p>여기서 src라는 속성을 통해 이미지를 불러올 수 있게 된 것 임 </p>
+<img src="html.jpg" width="30%">
+<p>프로젝트에 이미지 파일을 추가해서 가져다가 쓰기 가능, width를 추가하여 크기 조절 가능 width = "비율"</p>
+<h3>태그에는 부모 자식관계가 있다.</h3>
+<p>ㅇㅇ 내가 생각하는 그거임 </p>
+<ul>
+    <li>li : 리스트 태그 </li>
+    <li>ul : 목록과 다른 목록을 구분해준다. </li>
+</ul>
+<ul>
+    <li>li 태그는 ul 태그를 꼭 필요로 합니다. </li>
+    <li>ul 태그 역시 li 태그가 없다면 존재 가치가 없습니다.</li>
+    <li>이 둘은 서로 아주 밀접한 관계입니다.</li>
+</ul>
+<ol>
+    <li>숫자를 달고 싶은 경우에는</li>
+    <li>ol : ordered list (ul은 unordered)</li>
+</ol>
+<p>title : 웹 페이지의 제목을 지정 </p>
+<p>특히 title 태그는 검색엔진이 웹페이지를 분석할 때 가장 중요하게 생각하는 태그이기 때문에 title 태그를 쓰지 않으면 정말 큰 손해 </p>
+<p>이 링크가 어떤 내용을 담고 있는지를 툴팁으로 보여주는 기능</p>
+
+<p style="margin-top:45px;">이 웹페이지를 UTF-8로 저장했다면 웹페이지를 열 때도 UTF-8 방식으로 해석해서 열어야 한다</p>
+<p>영어가 아닌 문자가 깨지는 이유는 웹페이지가 저장된 문자 표현 방식과 웹브라우저가 웹페이지를 해석하는 방식이 일치하지 않을 때</p>
+<p>meta charset="utf-8"을 써서 알아먹게 한다 </p>
+
+<p style="margin-top:45px;">head : 본문을 설명하는 태그 </p>
+<p>body : 본문 태그 </p>
+<p>html : head와 body를 감싸는 태그 </p>
+<p>!doctype html : 이 문서가 html로 만들어졌음을 의미 </p>
+
+<p style="margin-top:45px;">a : html의 h의 의미인 hypertext를 의미함, anchor의 a </p>
+<p><a href="https://www.w3.org/TR/html5/" target="_blank" title="html5 specification"></a></p>
+<p>**href는 HyperText Reference의 약자**</p>
+</body>
+</html>
