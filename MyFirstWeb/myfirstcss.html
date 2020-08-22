@@ -1,8 +1,17 @@
 <!doctype html>
 <html>
 <head>
-<title>WEB1 - CSS</title>
-<meta charset="utf-8">
+    <title>WEB1 - CSS</title>
+    <meta charset="utf-8">
+    <style>
+        a {
+            color: red;
+            text-decoration: none;
+        }
+        h2 {
+            color: green;
+        }
+    </style>
 </head>
 <body>
 <h1><a href = "index.html">Hello Web!</a></h1>
@@ -11,6 +20,34 @@
     <li><a href = "myfirstcss.html">CSS</a></li>
     <li><a href = "myfirstjavascript.html">Javascript</a></li>
 </ol>
-<h2>CSS</h2>
+<h2>웹페이지를 아릅답게 만드는 방법</h2>
+<p>
+<ol>
+    <li>쉽지만 한계가 있는 방법 : html에 디자인에 관련된 새로운 태그를 추가하기</li>
+    <li>어렵지만 근본적인 방법 : 디자인에 최적화된 완전히 새로운 언어를 만들기 -> CSS</li>
+</ol>
+<h2>쉽지만 한계가 있는 방법 : 디자인을 위한 태그 </h2>
+<p>font : (지금은 사용하지 않음) 말그대로 폰트 설정하는 태그</p>
+<p><font color="red">빨간색</font></p>
+<p>이 font 태그는 이 웹에 대해서 어떠한 정보도 주지 않는다. 단지 디자인.. </p>
+<p>디자인 자체가 정보가 될 수 없음 : 시각장애인이 알 수 없는 것은 정보가 아니라고 할 수 있음 </p>
+<p>CSS는 이러한 문제뿐만 아니라 중복적인 수정에 대해서도 적절한 해결책을 제공해줌!</p>
+<h2>어렵지만 근본적인 해결책 : CSS</h2>
+<!--주석은 이렇게-->
+<p>style 태그 : 컴퓨터에게 html문법으로 지금부터는 css로 해석해야해 하고 말해줌 </p>
+<p>a { color: red; } 이렇게 쓰면 모든 a태그에 대해 폰트 컬러가 red </p>
+<p>CSS가 도입된 이유</p>
+<ol>
+    <li>html이 정보에 전념하게 함</li>
+    <li>html을 통해서 디자인 하는 것보다 훨씬 효율적임</li>
+</ol>
+<p>속성값으로 따로 색상을 설정해줄 수 있다. 이미 style에서 전체 설정 해줬어도 개별적으로 따로 설정 가능</p>
+<p style="color:purple">태그 안에 style="color:purple" 이런식으로 넣으면 됨 </p>
+<p>style=""은 html 코드임, ""안에 반드시 css의 효과가 들어감 </p>
+<p>style '태그'안에는 효과만 있어서는 누구에게 주어야하는 지 모르기 때문에 a{} 같은 게 있는 거임</p>
+<p>이 a{}이런거를 선택자(selector)라고 부름 그리고 효과는 선언(declaration)이라고 함</p>
+<p>declaration에서 text-decoration은 그 글씨의 꾸밈효과에 대해 말함. a { text-decoration: none; } 이라고 하면 링크에 있던 밑줄이 없어짐 </p>
+<p style="color:darkblue; text-decoration: underline;">style 속성안에도 세미콜론으로 두가지 효과 넣기 쌉가넝 text-decoration: underline;이거 넣음요</p>
+<img src="css_word.jpeg" width="500">
 </body>
 </html>
