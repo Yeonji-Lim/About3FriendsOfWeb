@@ -4,20 +4,32 @@
     <title>WEB1 - CSS</title>
     <meta charset="utf-8">
     <style>
+        #active {
+        color: red;
+        }
+        .saw {
+            color: blanchedalmond;
+        }
         a {
-            color: red;
+            color: palevioletred;
             text-decoration: none;
         }
+
         h2 {
             color: green;
         }
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
 <h1><a href = "index.html">Hello Web!</a></h1>
 <ol>
-    <li><a href = "myfirst.html">HTML</a></li>
-    <li><a href = "myfirstcss.html">CSS</a></li>
+    <li><a href = "myfirst.html" class="saw">HTML</a></li>
+    <li><a href = "myfirstcss.html" class="saw" id="active">CSS</a></li>
     <li><a href = "myfirstjavascript.html">Javascript</a></li>
 </ol>
 <h2>웹페이지를 아릅답게 만드는 방법</h2>
@@ -49,5 +61,7 @@
 <p>declaration에서 text-decoration은 그 글씨의 꾸밈효과에 대해 말함. a { text-decoration: none; } 이라고 하면 링크에 있던 밑줄이 없어짐 </p>
 <p style="color:darkblue; text-decoration: underline;">style 속성안에도 세미콜론으로 두가지 효과 넣기 쌉가넝 text-decoration: underline;이거 넣음요</p>
 <img src="css_word.jpeg" width="500">
+<p>class에 대해 설정할 때는 "."을 통해 class라는 것을 알고 명명순서대로 정의해야하고, id의 경우에는 "#"을 통해 id라는 것을 알려야 함, 단 한번만 등장해야한다 중복 x </p>
+<p>태그 선택자가 제일 약하고, 다음이 클래스 다음이 아이디 순으로 강해짐 </p>
 </body>
 </html>
