@@ -4,6 +4,9 @@
     <title>WEB1 - CSS</title>
     <meta charset="utf-8">
     <style>
+        body {
+            margin: 0px;
+        }
         #active {
         color: red;
         }
@@ -21,13 +24,22 @@
         h1 {
             font-size: 50px;
             text-align: center;
+            border-bottom: 1px solid darkslateblue;
+            margin: 0px;
+            padding: 10px;
+        }
+        #main_menu {
+            border-right: 1px solid darkslateblue;
+            width: 100px;
+            margin: 0px;
+            padding: 30px;
         }
 
     </style>
 </head>
 <body>
 <h1><a href = "index.html">Hello Web!</a></h1>
-<ol>
+<ol id="main_menu">
     <li><a href = "myfirst.html" class="saw">HTML</a></li>
     <li><a href = "myfirstcss.html" class="saw" id="active">CSS</a></li>
     <li><a href = "myfirstjavascript.html">Javascript</a></li>
@@ -63,5 +75,6 @@
 <img src="css_word.jpeg" width="500">
 <p>class에 대해 설정할 때는 "."을 통해 class라는 것을 알고 명명순서대로 정의해야하고, id의 경우에는 "#"을 통해 id라는 것을 알려야 함, 단 한번만 등장해야한다 중복 x </p>
 <p>태그 선택자가 제일 약하고, 다음이 클래스 다음이 아이디 순으로 강해짐 </p>
+<p>block element 와 inline element</p>
 </body>
 </html>
