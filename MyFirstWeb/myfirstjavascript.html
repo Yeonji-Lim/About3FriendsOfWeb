@@ -14,12 +14,22 @@
         <li><a href = "myfirstjavascript.html">Javascript</a></li>
     </ol>
     <div id="article">
+        <h2>Javascript</h2>
+        <p>웹브라우저로 동작되는 SW에 프로그래밍적인 제어를 하기 위한 언어</p>
+        <p>"탈웹브라우저" : 더이상 자바스크립트는 웹브라우저에 국한되지 않음</p>
+        <p><img src="ot.png" width="50%"></p>
+        <p>웹서버를 동작하기 위한 도구로도 사용 -> 서버사이드 스크립트 대표적인 기술 : node.js</p>
+        <p>node.js 같은 기술들이 자바 스크립트를 웹서버에서도 사용가능하게 함 ex : Java, PHP, ruby, python</p>
+        <p><img src="language_environment.png" width="50%"></p>
+        <h2>콘솔</h2>
+        <p>검사에서 콘솔창을 이용하면 자바스크립트 코드를 시험삼아 작성해볼 수 있다. </p>
+        <p>참고 : <a href="https://opentutorials.org/course/580">크롬개발자도구</a></p>
         <h2>input</h2>
         <p>input 태그로 버튼을 넣을 수 있다.</p>
         <p>input type="button" value="night" onclick="[자바스크립트 코드가 들어가는 자리]"</p>
         <p>클릭하면 자바스크립트의 코드가 실행된다</p>
         <input type="button" value="night" onclick="
-            document.querySelector('body').style.backgroundColor='black';
+            document.querySelector('body').style.backgroundColor='midnightblue';
             document.querySelector('body').style.color='darkgray';
         ">
         <input type="button" value="day" onclick="
@@ -29,7 +39,7 @@
         <p>조건문을 사용한 토글 버튼</p>
         <input id="night_day" type="button" value="night" onclick="
             if(document.querySelector('#night_day').value === 'night') {
-                document.querySelector('body').style.backgroundColor='black';
+                document.querySelector('body').style.backgroundColor='midnightblue';
                 document.querySelector('body').style.color='darkgray';
                 document.querySelector('#night_day').value = 'day';
             } else {
@@ -39,16 +49,39 @@
             }
         ">
         <p>하나의 기능으로 퉁치기 쌉가넝</p>
-        <p>리팩토한 토글 버튼</p>
+        <p>리팩토링한 토글 버튼</p>
         <input type="button" value="night" onclick="
             var target = document.querySelector('body');
             if(this.value === 'night') {
-                target.style.backgroundColor='black';
+                target.style.backgroundColor='midnightblue';
                 target.style.color='darkgray';
                 this.value = 'day';
             } else {
                 target.style.backgroundColor='blanchedalmond';
                 target.style.color='darkslateblue';
+                this.value = 'night';
+            }
+        ">
+        <p>반복문을 이용해서 링크한 곳 색깔 바꾸기</p>
+        <input type="button" value="night" onclick="
+            var target = document.querySelector('body');
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            if(this.value === 'night') {
+                target.style.backgroundColor='midnightblue';
+                target.style.color='darkgray';
+                while(i < alist.length) {
+                    alist[i].style.color = 'lightpink';
+                    i = i+1;
+                }
+                this.value = 'day';
+            } else {
+                target.style.backgroundColor='blanchedalmond';
+                target.style.color='darkslateblue';
+                while(i < alist.length) {
+                    alist[i].style.color = 'palevioletred';
+                    i = i+1;
+                }
                 this.value = 'night';
             }
         ">
@@ -64,6 +97,9 @@
         <p>변수는 대입으로 값을 바꿀 수 있고 상수는 그럴 수 없다.</p>
         <h2>document.querySelector</h2>
         <p>"Javascript select tag by css selector" css에서와 같이 태그는 그대로 매개변수, 클래스 .믈래스, 아이디는 #아이디</p>
+        <p>쿼리 셀렉터는 해당하는거 한가지만 가져온다</p>
+        <h2>document.querySelectorAll</h2>
+        <p>nodelist를 반환한다 </p>
         <h2><a href="conditional_statements.html">조건문</a></h2>
         <h2>Repacktoring</h2>
         <p>동작은 그대로 두고 코드의 비효율적인 면을 없애고 가독성을 높이고 유지보수를 편리하게 만들기 위해 코드를 다시 작성하는 것을 리팩토링이라고 한다.</p>
