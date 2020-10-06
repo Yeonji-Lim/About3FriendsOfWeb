@@ -4,35 +4,7 @@
     <title>WEB1 - CSS</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <script>
-        function aSetColor(color) {
-            var alist = document.querySelectorAll('a');
-            var i = 0;
-            while(i < alist.length) {
-                alist[i].style.color = color;
-                i = i+1;
-            }
-        }
-        function bodySetColor(color) {
-            document.querySelector('body').style.color = color;
-        }
-        function bodyBackgroundSetColor(color) {
-            document.querySelector('body').style.backgroundColor = color;
-        }
-        function night_day_handler(self) {
-            if(self.value === 'night') {
-                bodyBackgroundSetColor('midnightblue');
-                bodySetColor('darkgray')
-                aSetColor('plum');
-                self.value = 'day';
-            } else {
-                bodyBackgroundSetColor('blanchedalmond');
-                bodySetColor('darkslateblue');
-                aSetColor('palevioletred');
-                self.value = 'night';
-            }
-        }
-    </script>
+    <script src="colors.js"></script>
 </head>
 <body style="background-color: blanchedalmond; color: darkslateblue">
 <h1><a href = "index.html">Hello Web!</a></h1>
@@ -127,8 +99,12 @@
         <h2>Console</h2>
         <p>검사의 콘솔창에서 JS를 직접 실행시킬 수 있다.</p>
         <p>'(문자열)'.length : 해당 문자열의 길이를 반환한다 </p>
+        <p>.indexof([charvalue]) : 해당 문자의 인덱스 반환</p>
         <h2>자료형</h2>
         <p>number, string</p>
+        <p>문자열 쓸 때, "와 ' 아무거나 사용 가능하지만 혼용해서 사용하면 안된다.</p>
+        <p>문자열 안에서 \가 나오면 그 바로 뒤의 문자를 정보로 인식</p>
+        <p>typeof을 쓰면 해당 데이터의 자료형을 알 수 있다. ex : typeof 1, typeof "1"</p>
         <h2>변수와 상수</h2>
         <p>변수는 대입으로 값을 바꿀 수 있고 상수는 그럴 수 없다.</p>
         <h2>document.querySelector</h2>
@@ -154,6 +130,7 @@
         <h3>프로퍼티와 메소드</h3>
         <p><img src="method.png" width="50%"></p>
         <p><img src="method_ex.png" width="50%"></p>
+        <p>참고 : Math의 메소드로 다양한 연산을 할 수 있다. round, random ..</p>
 
     </div>
 </div>
