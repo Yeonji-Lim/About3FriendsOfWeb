@@ -1,3 +1,5 @@
 <h1>Ajax</h1>
 <p>ajax 짱~</p>
 <p>ajax는 여러가지 단점이 있는디 이걸 개선한게 pjax임</p>
+<p>내가 쓰고자하는 브라우저에서 fetch api를 쓸 수 있는 지를 알고 싶다면 can i use에서 확인해보자</p>
+<p>오래된 브라우저까지 챙기기 : polyfill</p>
