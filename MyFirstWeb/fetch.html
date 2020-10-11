@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <article>
+
+        </article>
+        <input type="button" value="fetch" onclick="
+            fetch('htmlwithajax').then(function(response) {
+                response.text().then(function(text){
+                    document.querySelector('article').innerHTML = text;
+                })
+            })
+
+            // API를 통한 요청과 응답!
+            // fetch라는 함수는 첫번째 인자에서 말하는 파일을 클라이언트가 서버에게 요청하는 것이다.
+            // fetch('htmlwithajax');
+
+            // then : 서버가 응답할 때까지 할 기능, fetch 뒤에 붙어있으면 fetch의 응답이 끝났을 때 then에 들어있는 함수를 실행시켜준다.
+            // Asynchronous(비동기), 만약 동기로 실행되었다면, fetch 밑의 숫자로그가 먼저 실행되지 않고 fetch가 끝날 때 까지 기다렸을 것임
+            // function callbackme() {
+            //     console.log('response end');
+            // }
+            // fetch('htmlwithajax').then(callbackme);
+            // console.log(1);
+            // console.log(2);
+            //
+            // 같은 의미
+            // callbackme = function() {
+            //     console.log('response end');
+            // }
+            // fetch('htmlwithajax').then(callbackme);
+
+            // 같은 의미!
+            // fetch('htmlwithajax').then(function() {
+            //     console.log('response end');
+            // });
+
+            // response 가 뭘까? : html status를 포함하고 있음
+            // fetch('html').then(function(response) {
+            //     if(response.status == '404') {
+            //         alert('Not found')
+            //     }
+            //     console.log(response);
+            // });
+        ">
+    </body>
+</html>
