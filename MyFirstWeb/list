@@ -1,0 +1,4 @@
+<li><a href="#!html" onclick="fetchPage('htmlwithajax');">HTML</a></li>
+<!--hash는 원래 북마크 기능이기 때문에 구분하기 위해 hash뒤에 !(bang)을 붙이고 이를 hash bang이라 한다. 이를 통해 url이 바뀜!-->
+<li><a href="#!css" onclick="fetchPage('csswithajax');">CSS</a></li>
+<li><a href="#!javascript" onclick="fetchPage('jswithajax');">Javascript</a></li>

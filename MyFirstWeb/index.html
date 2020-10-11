@@ -6,29 +6,30 @@
 </head>
 <body>
     <h1><a href = "index.html">Hello Web!</a></h1>
-    <ol>
-        <li><a onclick="
-            fetch('htmlwithajax').then(function(response){
-                response.text().then(function (text){
-                    document.querySelector('article').innerHTML = text;
-                })
-            });
-        ">HTML</a></li>
-        <li><a onclick="
-            fetch('htmlwithajax').then(function(response){
-                response.text().then(function (text){
-                    document.querySelector('article').innerHTML = text;
-                })
-            });
-        ">CSS</a></li>
-        <li><a onclick="
-            fetch('htmlwithajax').then(function(response){
-                response.text().then(function (text){
-                    document.querySelector('article').innerHTML = text;
-                })
-            });
-        ">Javascript</a></li>
+    <ol id="nav">
+
     </ol>
-    <article></article>
+    <article>
+
+    </article>
+    <script>
+        function fetchPage(pagename) {
+            fetch(pagename).then(function(response){
+                response.text().then(function (text){
+                    document.querySelector('article').innerHTML = text;
+                })
+            });
+        }
+        if(location.hash) {
+            fetchPage(location.hash.substr(2));
+        } else {
+            fetchPage('welcomeajax');
+        }
+        fetch('list').then(function(response){
+            response.text().then(function (text){
+                document.querySelector('#nav').innerHTML = text;
+            })
+        });
+    </script>
 </body>
 </html>
